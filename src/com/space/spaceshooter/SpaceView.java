@@ -133,7 +133,7 @@ class SpaceView extends SurfaceView implements SurfaceHolder.Callback, OnTouchLi
                     Sprite.setCanvas(c);
                     synchronized (mSurfaceHolder) 
                     {
-                    	if (System.currentTimeMillis() - mLastTime >= 25)
+                    	if (System.currentTimeMillis() - mLastTime >= 20) // 25
                     		updatePhysics();                 
                     	doDraw(c);                                         
                     }
